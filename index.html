@@ -1,1 +1,49 @@
-My GitHub Page
+<!--    Assmt 1 - Mobility INFT73-336
+        Charisse Gebhart SID: 13219747-->
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>calc13219747</title>
+	<link rel="stylesheet" type="text/css" href="css/calc13219747.css" /> 				
+</head>
+ 
+<body>
+    <form id="CalcForm">
+		<textarea class="disp" id="display" rows="4" cols="200">Ready</textarea>
+		<!--div class="disp"><span id="display">Ready</span></div>-->
+		<div class="row">
+			<input type="button" class="digit" value="1" onclick="showNum(this.value)" />
+			<input type="button" class="digit" value="2" onclick="showNum(this.value)" />
+			<input type="button" class="digit" value="3" onclick="showNum(this.value)" />
+			<input type="button" class="operator" value="+" onclick="storeOper(this.value)" />
+		</div>
+		<div class="row">
+			<input type="button" class="digit" value="4" onclick="showNum(this.value)" />
+			<input type="button" class="digit" value="5" onclick="showNum(this.value)" />
+			<input type="button" class="digit" value="6" onclick="showNum(this.value)" />
+			<input type="button" class="operator" value="-" onclick="storeOper(this.value)" />
+		</div>
+		<div class="row">
+			<input type="button" class="digit" value="7" onclick="showNum(this.value)" />
+			<input type="button" class="digit" value="8" onclick="showNum(this.value)" />
+			<input type="button" class="digit" value="9" onclick="showNum(this.value)" />
+			<input type="button" class="operator" value="*" onclick="storeOper(this.value)" />
+		</div>
+		<div class="row">
+			<input type="button" class="digit" value="0" onclick="showNum(this.value)" />
+			<input type="button" class="digit" value="." onclick="showNum(this.value)" />
+			<input type="button" id="Equals" value="=" onclick="Calculate()" />								
+			<input type="button" class="operator" value="/" onclick="storeOper(this.value)" />			
+		</div>
+		<div class="finalRow">
+			<input type="button" class="memory" value="M+" onclick="storeVal()" />
+			<input type="button" class="memory" value="Recall" onclick="showMem()" />
+			<input type="button" class="memory" value="Clear" onclick="clearNum()" />
+		</div>
+	</form>
+	<script src="js/calc13219747.js"></script>
+</body>
+</html>
