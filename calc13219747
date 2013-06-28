@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document 
+   Assmt1 - Mobility INFT73-336
+   Charisse Gebhart
+   SID: 13219747 
+   for   Google Nexus S 400 x 800
+		Google Nexus 7 1200 x 800
+		Apple iPhone 3GS 320 x 480 = 3.5"
+		Apple iPad 2 1024 x 768 = 9.7" diag
+*/
+
+body{
+	min-width:320px;
+	max-width:1700px;					/* comfortable desktop screen width */
+	height: auto;						/* fluid resizing */
+}
+@media screen and (max-width: 1200px) {	/* threshold for CSS on tablet */
+	
+	div{background-color:FF0066;}
+	
+	.disp{	
+	width:982px;
+	height:100px;
+	border: 5px solid black;
+	font:80px arial,san-serif;
+	color:#833059;
+	text-align: right;
+	padding-right: 15px;
+	text-shadow:2px 2px 1px #000000;
+	border-radius:5px;
+	background-color:#E6E6EE;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #E6E6E6), color-stop(1, #A7A7A7) );
+	background:-moz-linear-gradient( center top, #E6E6E6 5%, #A7A7A7 100% );
+	}
+	.row{
+	width:1009px;
+	height:auto;
+	}
+	.finalRow{
+	clear:both;
+	}
+	.digit{
+	width:234px;
+	height: 110px;
+	background-color: #833059;
+	box-shadow: 3px 3px 2px #70706D;
+	text-shadow: 2px 2px 1px #000000;	
+	border-radius:10px;	
+	margin: 5px 20px 0px 0px;
+	float: left;
+	font: bold 76px arial,san-serif;
+	color:  #FFFFCC;
+	text-align: center;
+	}
+	.digit:hover{
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #833059), color-stop(1, #A86E8B) );
+		background:-moz-linear-gradient( center top, #833059 5%, #A86E8B 100% );
+	}	
+	.operator{	
+	width:235px;
+	height: 110px;
+	background-color: #BA8BA2;
+	box-shadow: 3px 3px 2px #70706D;
+	text-shadow: 2px 2px 1px #000000;
+	border-radius:10px;
+	margin: 5px 0px 0px 0px;
+	float: right;
+	font: bold 76px arial,san-serif;
+	color:  #FFFFCC;
+	text-align: center;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #BA8BA2), color-stop(1, #956F82) );
+	background:-moz-linear-gradient( center top, #BA8BA2 5%, #956F82 100% );
+	}
+	.operator:hover{
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #956F82), color-stop(1, #BA8BA2) );
+		background:-moz-linear-gradient( center top, #956F82 5%, #BA8BA2 100% );
+		}
+	.memory{
+	width:330px;
+	height:110px;
+	background-color: #8383AC;
+	box-shadow: 3px 3px 2px #70706D;
+	text-shadow: 2px 2px 1px #000000;
+	border-radius:10px;	
+	margin: 5px 0px 0px 5px;
+	float: left;
+	font: bold 76px arial,san-serif;
+	color:  #FFFFCC;
+	text-align: center;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #BA8BA2), color-stop(1, #8383AC) );
+	background:-moz-linear-gradient( center top, #BA8BA2 5%, #8383AC 100% );
+	}
+	.memory:hover{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8383AC), color-stop(1, #BA8BA2) );
+	background:-moz-linear-gradient( center top, #8383AC 5%, #BA8BA2 100% );
+	}
+	#Equals{
+	width:235px;
+	height: 110px;
+	background-color: #BA8BA2;
+	box-shadow: 3px 3px 2px #70706D;
+	text-shadow: 2px 2px 1px #000000;
+	border-radius:10px;	
+	margin: 5px 0px 0px 0px;
+	float: left;
+	font: bold 76px arial,san-serif;
+	color:  #FFFFCC;
+	text-align: center;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #BA8BA2), color-stop(1, #956F82) );
+	background:-moz-linear-gradient( center top, #BA8BA2 5%, #956F82 100% );
+	}
+	#Equals:hover{
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #956F82), color-stop(1, #BA8BA2) );
+		background:-moz-linear-gradient( center top, #956F82 5%, #BA8BA2 100% );
+		}
+}
+
+@media screen and (max-width: 400px) {	/* threshold for CSS on phone */
+
+	.disp{	
+	width:300px;
+	height:55px;
+	border: 2px solid black;
+	font:44px arial,san-serif;
+	padding-right: 10px;
+	}
+	.row{
+	max-width:310px;
+	}
+	.digit{
+	width:70px;
+	height: 80px;
+	box-shadow: 2px 2px 1px #70706D;
+	border-radius:5px;
+	margin: 3px 3px 0px 0px;
+	font: bold 32px arial,san-serif;
+	}
+	.operator{	
+	width:70px;
+	height: 80px;
+	box-shadow: 2px 2px 1px #70706D;
+	border-radius:5px;
+	margin: 3px 3px 0px 0px;
+	font: bold 36px arial,san-serif;
+	}
+	.memory{
+	width:97px;
+	height: 80px;
+	box-shadow: 3px 3px 2px #70706D;
+	border-radius:5px;	
+	margin: 3px 6px 0px 0px;
+	font: bold 28px arial,san-serif;
+	}
+	#Equals{
+	width:70px;
+	height: 80px;
+	box-shadow: 2px 2px 1px #70706D;
+	border-radius:5px;	
+	margin: 3px 3px 0px 0px;
+	font: bold 36px arial,san-serif;
+	}
+}
